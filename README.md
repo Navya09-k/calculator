@@ -1,2 +1,13 @@
-# calculator
-This Python program implements a simple calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. It accepts user inputs and an operator, calculates the result, and displays the output. It is a beginner-friendly Python project.
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+op = input("Enter operator (+, -, *, /): ")
+if op == '+':
+    print("Result =", a + b)
+elif op == '-':
+    print("Result =", a - b)
+elif op == '*':
+    print("Result =", a * b)
+elif op == '/':
+    print("Result =", a / b if b != 0 else "Cannot divide by zero")
+else:
+    print("Invalid operator")
